@@ -30,21 +30,53 @@
 //     { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' } 
 //   ];
   
-//   function greetDevelopers(list) {
-//     for (let i =0; i < list.length; i++) {
-//       list[i].greeting = 'Hi ' + list[i].firstName + ', what do you like the most about ' + list[i].language + '?'
-//     } return list
-//   }
+  // function greetDevelopers(list) {
+  //   for (let i =0; i < list.length; i++) {
+  //     list[i].greeting = 'Hi ' + list[i].firstName + ', what do you like the most about ' + list[i].language + '?'
+  //   } return list
+  // }
 
-// list.forEach((item) => { 
-//     item.greeting = 'Hi ' + item.firstName + ', what do you like the most about ' + item.language + '?'    
-//     })
+
 
 // function greetDevelopers(list) {
-//     list.map((n) => n.greeting = 'Hi ' + n.firstName + ', what do you like the most about ' + n.language + '?')
-//     return list
-//   }
+
+  //  list.forEach((item) => { 
+  //   item.greeting = 'Hi ' + item.firstName + ', what do you like the most about ' + item.language + '?'    
+  //   })
+  //   return list
+    
+    // list.map((n) => n.greeting = 'Hi ' + n.firstName + ', what do you like the most about ' + n.language + '?')
+    // return list
+  // }
   
-//   console.log(greetDevelopers(list1))
+  // console.log(greetDevelopers(list1))
   
-//   console.log(greetDevelopers(list1))
+
+
+// 3.
+
+var list1 = [
+  { firstName: 'Emma', lastName: 'Z.', country: 'Netherlands', continent: 'Europe', age: 29, language: 'Ruby' },
+  { firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'Javascript' },
+  { firstName: 'Jayden', lastName: 'P.', country: 'Jamaica', continent: 'Americas', age: 42, language: 'JavaScript' }
+];
+
+function isRubyComing(list) {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].language == 'Ruby') {
+      return true
+    }
+  } return 
+
+  // list.forEach((item) => {
+  //   if (item.language === 'Ruby') {
+  //    return 
+  //     } 
+  // }) 
+  // return true
+
+
+ // return list.some((n) => n.language == 'Ruby') 
+}
+
+console.log(isRubyComing(list1))
